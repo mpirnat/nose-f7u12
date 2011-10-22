@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='nose-f7u12',
-    version='0.1',
+    version='0.2',
 
     description='f7u12 output plugin for the nose testing framework',
     long_description=open('./README').read(),
