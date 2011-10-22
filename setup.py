@@ -9,15 +9,8 @@ setup(
     author='Mike Pirnat',
     author_email='mpirnat@gmail.com',
     license='MIT',
-
     url='https://github.com/mpirnat/nose-f7u12',
 
-    long_description="""
-Implements PEP712 for the Nose testing framework; after 7 failing tests,
-replaces all 'F' character output with 'U's for the remainder of the test run.
-See
-http://www.revsys.com/blog/2011/oct/20/pep712-proposal-make-unittest2-more-accurate/
-""",
     packages=['f7u12'],
     entry_points={
         'nose.plugins': [
