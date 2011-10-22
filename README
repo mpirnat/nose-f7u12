@@ -22,6 +22,10 @@ From PyPI:
 
     pip install nose-f7u12
 
+From source:
+
+    pip install git+git://github.com/mpirnat/nose-f7u12#egg=nose_f7u12
+
 Usage
 -----
 
