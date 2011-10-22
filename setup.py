@@ -5,7 +5,7 @@ setup(
     version='0.1',
 
     description='f7u12 output plugin for the nose testing framework',
-    long_description=open('./README.txt').read(),
+    long_description=open('./README').read(),
     author='Mike Pirnat',
     author_email='mpirnat@gmail.com',
     license='MIT',
