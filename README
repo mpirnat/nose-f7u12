@@ -3,12 +3,17 @@ Nose F7U12
 
 Implements PEP-712 style output for the Nose testing framework so that the
 output more accurately represents the developer's feelings when blocks of tests
-fail.
+fail.  After 7 failures, omit a "U" instead of an "F".
 
 See http://www.revsys.com/blog/2011/oct/20/pep712-proposal-make-unittest2-more-accurate/
 
-Why?  Because I thought it was funny, and I'd never written a Nose plugin
-before.
+Why?  Because I laughed when I first saw PEP-712, and I'd never written a Nose
+plugin before.
+
+Thanks to:
+
+ * Michael Foord (for tweeting the link in the first place)
+ * Kumar McMillan (for having a good example to cheat off of/learn from)
 
 Install
 -------
