@@ -18,7 +18,7 @@ replaces all 'F' character output with 'U's for the remainder of the test run.
 See
 http://www.revsys.com/blog/2011/oct/20/pep712-proposal-make-unittest2-more-accurate/
 """,
-    packages=['nose-f7u12'],
+    packages=['f7u12'],
     entry_points={
         'nose.plugins': [
             'f7u12 = f7u12:F7U12',
