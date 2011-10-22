@@ -18,11 +18,14 @@ class F7U12Test(PluginTester):
 
 class TestWhenEncounterinManyErrors(F7U12Test, unittest.TestCase):
 
+    def _first_line(self, output):
+        return str(output).split('\n')[0]
+
     def test_emits_F_for_first_seven_failures(self):
-        assert_equals(7, str(self.output).count('F'))
+        assert_equals(7, self._first_line(self.output).count('F'))
 
     def test_emits_U_after_seven_failures(self):
-        output = str(self.output)
+        output = self._first_line(self.output)
         last_f = output.rfind('F')
         assert output[last_f+1:].count('U')
         assert not output[:last_f].count('U')
