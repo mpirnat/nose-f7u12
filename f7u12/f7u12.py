@@ -26,10 +26,10 @@ class F7U12(Plugin):
     def handleFailure(self, test, err):
         self.failure_count += 1
 
-        if self.failure_count > 8:
-            self.stream.write('U')
-        else:
+        if self.failure_count < 8:
             self.stream.write('F')
+        else:
+            self.stream.write('U')
         return True
 
     def setOutputStream(self, stream):
