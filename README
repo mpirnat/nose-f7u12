@@ -1,0 +1,52 @@
+Nose F7U12
+==========
+
+Implements PEP-712 style output for the Nose testing framework so that the
+output more accurately represents the developer's feelings when blocks of tests
+fail.
+
+See http://www.revsys.com/blog/2011/oct/20/pep712-proposal-make-unittest2-more-accurate/
+
+Why?  Because I thought it was funny, and I'd never written a Nose plugin
+before.
+
+Install
+-------
+
+From PyPI:
+
+    pip install nose-f7u12
+
+Usage
+-----
+
+    nosetests --with-f7u12
+
+Example
+-------
+
+    $ nosetests --with-f7u12
+
+    .......FFFFFFFFUUUUUUUUUUUUUUUU..U..U..U..U..U..U.
+    ======================================================================
+    FAIL: test_f7u12.TestGeneratesLotsOfFailures.test_generates_failures(7,)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+    File
+    "/Users/mpirnat/Documents/code/python/nose-f7u12/lib/python2.7/site-packages/nose-1.1.2-py2.7.egg/nose/case.py",
+    line 197, in runTest
+        self.test(*self.arg)
+    File
+    "/Users/mpirnat/Documents/code/python/nose-f7u12/src/examples/test_f7u12.py",
+    line 15, in _make_a_test
+        assert False
+    AssertionError
+
+    ----------------------------------------------------------------------
+
+    < lots more test failure output; use your imagination... >
+
+    ----------------------------------------------------------------------
+    Ran 50 tests in 0.021s
+
+    FAILED (errors=30)
